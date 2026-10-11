@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mentions légales · Charles Brioix</title>
+<meta name="description" content="Mentions légales et politique de confidentialité du site cbrioix.me.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://www.cbrioix.me/mentions-legales.html">
+<meta name="theme-color" content="#FBF7F1">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FBF7F1; --paper-2:#F4EDE2; --ink:#1A1815; --ink-2:#2E2A25;
+  --body:#5C554B; --muted:#7A7266; --faint:#9A9184; --rule:#E8E0D3;
+  --blue:#3C6CA8; --blue-d:#2C5484; --wood:#B4551F;
+  --dark-4:#16140F; --pad:56px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'General Sans',Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--blue);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{color:var(--blue-d)}
+.mono{font-family:'JetBrains Mono',ui-monospace,monospace}
+.kicker{font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--wood);margin:0}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:12px;top:12px;z-index:99;background:var(--ink);color:var(--paper);padding:10px 16px;border-radius:3px}
+
+.nav{position:sticky;top:0;z-index:50;height:80px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 var(--pad);border-bottom:1px solid var(--rule);background:rgba(251,247,241,.92);backdrop-filter:saturate(140%) blur(10px)}
+.nav a{text-decoration:none}
+.back{font-size:14px;color:#443F38;display:inline-flex;align-items:center;gap:8px;min-height:44px}
+.back:hover{color:var(--ink)}
+.brand{display:flex;align-items:baseline;gap:10px;color:var(--ink)}
+.brand b{font-size:17px;font-weight:600;letter-spacing:-.01em}
+.dot{width:5px;height:5px;border-radius:50%;background:var(--blue);display:inline-block}
+
+.head{padding:88px var(--pad) 40px;display:flex;flex-direction:column;gap:20px;border-bottom:1px solid var(--rule)}
+.eyebrow{display:flex;align-items:center;gap:12px}
+.eyebrow i{width:32px;height:1px;background:var(--wood);display:block}
+h1{font-size:clamp(36px,4.6vw,56px);font-weight:600;line-height:1.05;letter-spacing:-.035em;margin:0}
+.lede{font-size:17px;line-height:1.6;color:var(--body);max-width:640px;margin:0}
+
+.toc{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:8px 0 0;padding:0}
+.toc a{display:inline-flex;align-items:center;min-height:36px;padding:0 12px;border:1px solid var(--rule);border-radius:100px;font-size:13px;color:#443F38;text-decoration:none;transition:border-color .2s ease,color .2s ease}
+.toc a:hover{border-color:var(--blue);color:var(--blue)}
+
+.legal{padding:24px var(--pad) 96px;display:flex;flex-direction:column}
+.row{display:grid;grid-template-columns:240px minmax(0,1fr);gap:72px;padding:40px 0;border-bottom:1px solid var(--rule);scroll-margin-top:96px}
+.row h2{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;margin:0;display:flex;gap:12px;align-items:baseline}
+.row h2 .mono{font-size:11px;color:var(--blue);font-weight:400}
+.content{display:flex;flex-direction:column;gap:14px;max-width:720px}
+.content p{font-size:15.5px;line-height:1.7;color:var(--ink-2);margin:0;text-wrap:pretty}
+dl.fields{display:grid;grid-template-columns:200px minmax(0,1fr);gap:0;margin:0;border-top:1px solid var(--rule)}
+dl.fields dt,dl.fields dd{padding:12px 0;border-bottom:1px solid var(--rule);font-size:15px;line-height:1.5;margin:0}
+dl.fields dt{color:var(--muted)}
+dl.fields dd{color:var(--ink)}
+.content ul{margin:0;padding:0 0 0 18px;display:flex;flex-direction:column;gap:6px}
+.content li{font-size:15.5px;line-height:1.6;color:var(--ink-2)}
+
+
+footer{padding:32px var(--pad);background:var(--dark-4);display:flex;justify-content:space-between;align-items:center;gap:24px;font-size:13px;color:var(--muted);flex-wrap:wrap}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--paper)}
+.foot-links{display:flex;gap:24px}
+
+@media (max-width:1180px){:root{--pad:40px}.row{grid-template-columns:1fr;gap:18px}}
+@media (max-width:860px){
+  :root{--pad:24px}
+  .nav .brand{display:none}
+  .head{padding:56px var(--pad) 32px}
+  dl.fields{grid-template-columns:1fr}
+  dl.fields dt{padding-bottom:0;border-bottom:0}
+  dl.fields dd{padding-top:4px}
+  footer{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<header class="nav">
+  <a class="back" href="index.html"><span>←</span> Retour à l'accueil</a>
+  <a class="brand" href="index.html"><b>Charles Brioix</b><i class="dot"></i><span class="mono" style="font-size:11px;color:var(--muted)">Marketing santé</span></a>
+</header>
+
+<main id="main">
+  <section class="head">
+    <div class="eyebrow"><i></i><p class="kicker">Informations légales</p></div>
+    <h1>Mentions légales</h1>
+    <p class="lede">Conformément à la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique (LCEN) et au Règlement général sur la protection des données (RGPD).</p>
+    <ul class="toc" aria-label="Sommaire">
+      <li><a href="#editeur">Éditeur</a></li>
+      <li><a href="#hebergement">Hébergement</a></li>
+      <li><a href="#propriete">Propriété intellectuelle</a></li>
+      <li><a href="#donnees">Données personnelles</a></li>
+      <li><a href="#cookies">Cookies</a></li>
+      <li><a href="#liens">Liens externes</a></li>
+      <li><a href="#droit">Droit applicable</a></li>
+    </ul>
+  </section>
+
+  <div class="legal">
+    <section class="row" id="editeur">
+      <h2><span class="mono">01</span>Éditeur du site</h2>
+      <div class="content">
+        <p>Le site <b>cbrioix.me</b> est édité par :</p>
+        <dl class="fields">
+          <dt>Nom</dt><dd>Charles Brioix</dd>
+          <dt>Statut</dt><dd>Entrepreneur individuel</dd>
+          <dt>Adresse</dt><dd>9 rue Anatole France, 94270 Le Kremlin-Bicêtre</dd>
+          <dt>SIRET</dt><dd>92941967900014</dd>
+          <dt>TVA</dt><dd>FR 63929419679</dd>
+          <dt>Email</dt><dd>info[at]cbrioix.me</dd>
+          <dt>Directeur de la publication</dt><dd>Charles Brioix</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section class="row" id="hebergement">
+      <h2><span class="mono">02</span>Hébergement</h2>
+      <div class="content">
+        <dl class="fields">
+          <dt>Hébergeur</dt><dd>Netlify, Inc.</dd>
+          <dt>Adresse</dt><dd>512 2nd Street, Suite 200, San Francisco, CA 94107, États-Unis</dd>
+          <dt>Site web</dt><dd><a href="https://www.netlify.com" target="_blank" rel="noopener">www.netlify.com</a></dd>
+          <dt>Nom de domaine</dt><dd>Enregistré auprès de Namecheap, Inc. — <a href="https://www.namecheap.com" target="_blank" rel="noopener">www.namecheap.com</a></dd>
+        </dl>
+      </div>
+    </section>
+
+    <section class="row" id="propriete">
+      <h2><span class="mono">03</span>Propriété intellectuelle</h2>
+      <div class="content">
+        <p>L'ensemble des contenus de ce site (textes, mise en page, photographies, visuels) est la propriété de Charles Brioix, sauf mention contraire. Toute reproduction, représentation ou diffusion, totale ou partielle, sans autorisation écrite préalable est interdite.</p>
+        <p>Les logos, marques et visuels des clients et employeurs présentés dans les études de cas (deepeye Medical, CléPsy, Cibiltech, PDC, Agora Health, ETAI) restent la propriété de leurs détenteurs respectifs. Ils sont reproduits à titre de références professionnelles.</p>
+      </div>
+    </section>
+
+    <section class="row" id="donnees">
+      <h2><span class="mono">04</span>Données personnelles</h2>
+      <div class="content">
+        <p><b>Responsable du traitement :</b> Charles Brioix.</p>
+        <p><b>Données collectées :</b> via le formulaire de contact — nom, société (facultatif), adresse email professionnelle et contenu du message.</p>
+        <p><b>Finalité :</b> répondre à votre demande de contact. Base légale : votre consentement, exprimé par l'envoi du formulaire.</p>
+        <p><b>Destinataires :</b> les données sont réservées à Charles Brioix et ne sont ni vendues ni cédées à des tiers. Elles sont transmises via le service de formulaires de l'hébergeur Netlify, Inc. (États-Unis), qui encadre ces transferts par des clauses contractuelles types de la Commission européenne.</p>
+        <p><b>Durée de conservation :</b> 3 ans à compter du dernier contact</p>
+        <p><b>Vos droits :</b> vous disposez d'un droit d'accès, de rectification, d'effacement, d'opposition, de limitation et de portabilité de vos données. Pour les exercer, écrivez à info[at]cbrioix.me. Vous pouvez également introduire une réclamation auprès de la <a href="https://www.cnil.fr/fr/plaintes" target="_blank" rel="noopener">CNIL</a>.</p>
+      </div>
+    </section>
+
+    <section class="row" id="cookies">
+      <h2><span class="mono">05</span>Cookies</h2>
+      <div class="content">
+        <p>Ce site ne dépose aucun cookie publicitaire ni de mesure d'audience. Aucun bandeau de consentement n'est donc nécessaire.</p>
+        <p>Les polices de caractères sont chargées depuis Fontshare et Google Fonts : votre adresse IP est transmise à ces services lors de l'affichage des pages.</p>
+      </div>
+    </section>
+
+    <section class="row" id="liens">
+      <h2><span class="mono">06</span>Liens externes</h2>
+      <div class="content">
+        <p>Le site renvoie vers des services tiers, soumis à leurs propres conditions et politiques de confidentialité :</p>
+        <ul>
+          <li>Notion Calendar, pour la prise de rendez-vous ;</li>
+          <li>Google Drive, pour le téléchargement du CV ;</li>
+          <li>LinkedIn, pour le profil professionnel.</li>
+        </ul>
+        <p>Charles Brioix ne peut être tenu responsable du contenu de ces sites.</p>
+      </div>
+    </section>
+
+    <section class="row" id="droit">
+      <h2><span class="mono">07</span>Droit applicable</h2>
+      <div class="content">
+        <p>Les présentes mentions légales sont régies par le droit français. En cas de litige, et à défaut de résolution amiable, les tribunaux français seront seuls compétents.</p>
+        <p class="mono" style="font-size:12px;color:var(--faint)">Dernière mise à jour : 11 octobre 2026</p>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div>© 2026 Charles Brioix — Marketing Healthtech &amp; Medtech</div>
+  <div class="foot-links">
+    <a href="mentions-legales.html" aria-current="page">Mentions légales</a>
+    <a href="https://www.linkedin.com/in/charlesbrioix/" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</footer>
+</body>
+</html>

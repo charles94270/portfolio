@@ -1,17 +1,36 @@
-# portfolio
 # Portfolio Charles Brioix — www.cbrioix.me
 
 Homepage statique : `index.html` + assets. Aucun build, aucune dépendance, rien à compiler.
 Tout est déjà configuré pour le domaine **www.cbrioix.me**.
 
 ```
-site/
-  index.html      la homepage (CSS et JS inline)
-  merci.html      page de confirmation après envoi du formulaire
-  assets/         photos WebP, hero, image de partage (og.jpg)
-  logos/          6 logos clients en SVG
-  favicon.svg  robots.txt  sitemap.xml
+index.html             la homepage (CSS et JS inline)
+projets/               4 études de cas : deepeye-medical, clepsy, cibiltech, pdc
+mentions-legales.html  mentions légales et RGPD
+merci.html             page de confirmation après envoi du formulaire
+assets/                photos et visuels WebP, image de partage (og.jpg)
+logos/                 6 logos clients en SVG
+favicon.svg  robots.txt  sitemap.xml  netlify.toml  .gitignore
 ```
+
+---
+
+## Mise à jour via GitHub (branche dev → main)
+
+Le contenu de ce dossier va **à la racine du dépôt** (pas dans un sous-dossier `site/`).
+
+1. Passe sur la branche `dev`, supprime les anciens fichiers du site, copie tout le contenu de ce dossier
+   (y compris `.gitignore` et `netlify.toml`, fichiers cachés), puis commit et push.
+2. Dans Netlify : **Site configuration → Build & deploy → Branches and deploy contexts**
+   → *Branch deploys* : **Let me add individual branches** → `dev`.
+   Si le site Netlify n'est pas encore relié au dépôt : **Link repository** → GitHub → le dépôt,
+   branche de production `main`, commande de build vide, dossier de publication `.`
+3. Teste sur **https://dev--cbrioix.netlify.app** : les 4 pages projets, les mentions légales, le formulaire.
+4. Quand tout est bon : merge `dev` → `main` (pull request sur GitHub). Netlify déploie la production
+   automatiquement sur www.cbrioix.me.
+
+⚠️ Le formulaire fonctionne aussi sur la version `dev` : les messages de test arrivent dans le même
+tableau de bord Forms.
 
 ---
 
@@ -110,6 +129,6 @@ Le champ piège anti-bots est déjà en place, et l'envoi renvoie vers `merci.ht
 
 ## Reste à faire
 
-- Page **mentions légales** (obligatoire pour un site professionnel en France) : le lien de pied de page
-  pointe vers `/mentions-legales.html`, qui n'existe pas encore.
-- Les 4 **études de cas** `/projets/…` — les cartes affichent « bientôt en ligne » en attendant.
+- Remplacer les visuels Cibiltech et PDC (extraits de captures d'écran) par les fichiers d'origine
+  en meilleure résolution, en gardant les mêmes noms dans `assets/`.
+- Vérifier l'adresse de Netlify indiquée dans les mentions légales.

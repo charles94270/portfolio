@@ -1,0 +1,18 @@
+# Site statique : aucun build, on publie la racine du dépôt.
+[build]
+  publish = "."
+  command = ""
+
+# Les branches autres que main (ex. dev) sont publiées en "branch deploy"
+# sur https://dev--cbrioix.netlify.app — sans toucher au site en production.
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
