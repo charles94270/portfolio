@@ -2,7 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.cbrioix.me/</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-10-11</lastmod>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.cbrioix.me/projets/deepeye-medical.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.cbrioix.me/projets/clepsy.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.cbrioix.me/projets/cibiltech.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.cbrioix.me/projets/pdc.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.8</priority>
   </url>
 </urlset>
